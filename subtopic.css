@@ -1,0 +1,50 @@
+/* Sidebar Styles */
+.sidebar-nav {
+
+    list-style-type: none;
+    padding-top: 20px;
+    margin-left: -210px;
+    padding-right: 30px;
+
+}
+
+.sidebar-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+/* Main topic styles */
+.sidebar-link.main-topic {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Subtopic styles */
+.sidebar-link.subtopic {
+    font-size: 15px;
+    padding-left: 2rem;
+}
+
+/* Active state for main topics and subtopics */
+.sidebar-link.active {
+    color: var(--mercedes-blue);
+    border-left: 4px solid var(--mercedes-blue);
+}
+
+/* Hover effect */
+.sidebar-link:hover {
+    background-color: rgba(0, 160, 227, 0.1); /* Light blue background on hover */
+}
+
+/* Remove the expand/collapse styles since we're always showing subtopics */
+.sidebar-link.has-subtopics::after {
+    content: none;
+}
+
+/* Always show subtopics */
+.subtopics-container {
+    display: block;
+}
