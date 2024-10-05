@@ -1,7 +1,6 @@
 /* Mercedes-Benz SDL Styles with Custom Fonts */
 
 /* Font Definitions */
-
 :root {
   --mercedes-black: #000000;
   --mercedes-silver: #F2F2F2;
@@ -21,7 +20,7 @@
 
 /* Base Styles */
 body {
-  font-family: 'MBCorpoATitleCond';
+  font-family: 'MBCorpoATitleCond', sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--mercedes-silver);
@@ -35,25 +34,18 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'MBCorpoATitleCond';
+  font-family: 'MBCorpoATitleCond', sans-serif;
   font-weight: normal;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
 
-h1 { 
-  font-size: 5rem; 
-  margin: 20px;
-}
+h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; }
 h3 { font-size: 2rem; }
 h4 { font-size: 1.75rem; }
 h5 { font-size: 1.5rem; }
 h6 { font-size: 1.25rem; }
-
-strong, b {
-  font-weight: bold;
-}
 
 /* Header */
 .header {
@@ -63,69 +55,37 @@ strong, b {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo svg {
-  width: 48px;
-  height: 48px;
-  margin-right: 1rem;
-}
-
-.logo-text {
-  font-family: 'MBCorpoATitleCond';
-  font-size: 1.75rem;
-}
-
-.nav-menu {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-link {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: normal;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: var(--mercedes-blue);
-}
-
 /* Main Content */
 .main-content {
   padding: 3rem 0;
 }
 
+/* Hero Section */
 .hero {
   text-align: center;
   margin-bottom: 4rem;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
+  color: var(--mercedes-blue);
 }
 
 .hero p {
   font-size: 1.25rem;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto 2rem;
 }
 
-/* Cards */
+/* Card Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -135,43 +95,30 @@ strong, b {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-5px);
-}
-
-.card h3 {
-  color: var(--mercedes-blue);
-  font-family: 'MBCorpoATitleCond';
-}
-
-.bg-white {
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-}
-
-.card {
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.card:hover {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
-  transform: translateY(-5px);
 }
 
 .card h2 {
   color: var(--mercedes-blue);
-  font-family: 'MBCorpoATitleCond';
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--mercedes-blue);
 }
 
 /* Buttons */
-.btn {
+.btn-mercedes {
   display: inline-block;
   background-color: var(--mercedes-blue);
   color: var(--white);
@@ -182,7 +129,7 @@ strong, b {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
+.btn-mercedes:hover {
   background-color: var(--mercedes-dark-blue);
   transform: translateY(-2px);
 }
@@ -194,52 +141,9 @@ strong, b {
   padding: 2rem 0;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-link {
-  color: var(--white);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-  color: var(--mercedes-blue);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu {
-    margin-top: 1rem;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-links {
-    margin-top: 1rem;
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 }
-
-.card-with-bg {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);  /* Add a semi-transparent white overlay */
-}
-

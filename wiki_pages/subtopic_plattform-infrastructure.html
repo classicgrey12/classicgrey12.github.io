@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About CoDEHub</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.svg">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About SDL - Mercedes-Benz S-ID</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./subtopic.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css" />
     <style>
-        	body {
-				font-family: "MBCorpoATitleCond";
-				color: #333;
-				line-height: 1.6;
-			}
-			.bg-mercedes-black {
-				background-color: #000000;
-			}
-			.bg-mercedes-silver {
-				background-color: #f2f2f2;
-			}
-			.text-mercedes-blue {
-				color: #00a0e3;
-			}
-			.btn-mercedes {
-				background-color: #00a0e3;
-				color: white;
-				transition: all 0.3s ease;
-			}
-			.btn-mercedes:hover {
-				background-color: #0082b9;
-			}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'MBCorpoATitleCond';
+            color: #333;
+			line-height: 1.6;
+        }
+        
+        .bg-mercedes-black { 
+            background-color: #000000; 
+        }
+        .text-mercedes-blue { 
+            color: #00a0e3; 
+        }
+        .border-mercedes-blue { 
+            border-color: #00a0e3; 
+        }
+        
+        .sidebar-link.active {
+            color: #00a0e3;
+            border-left-color: #00a0e3;
+        }
+        
+        .content-section {
+            scroll-margin-top: 1rem;
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
@@ -344,10 +346,10 @@
                 <span class="text-2xl">Mercedes-Benz</span>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="./index.html" class="hover:text-mercedes-blue transition">Home</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Services</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Contact</a>
+                <a href="#" class="hover:text-mercedes-blue transition">Home</a>
+                <a href="#" class="hover:text-mercedes-blue transition">About CoDEHub</a>
+                <a href="#" class="hover:text-mercedes-blue transition">Services</a>
+                <a href="#" class="hover:text-mercedes-blue transition">Contact</a>
             </div>
         </nav>
     </header>
@@ -362,13 +364,15 @@
                             <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
                             <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
                             <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="#working-methods" class="sidebar-link main-topic">Data Mesh</a>
+                    <li>
+                        <a href="#working-methods" class="sidebar-link main-topic">Working Methods</a>
                         <ul class="subtopics-container">
-                            <li><a href="#agile" class="sidebar-link subtopic">Concepts (TBA)</a></li>
+                            <li><a href="#agile" class="sidebar-link subtopic">Roles & Team Structure 2024</a></li>
+                            <li><a href="#scrum" class="sidebar-link subtopic">Domain Teams</a></li>
+                            <li><a href="#scrum" class="sidebar-link subtopic">Data Mesh</a></li>
+                            <li><a href="#scrum" class="sidebar-link subtopic">Our Collaboration Partners</a></li>
                         </ul>
                     </li>
                     <li>
@@ -393,31 +397,22 @@
                             <li><a href="#external-data" class="sidebar-link subtopic">Data Products</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="#working-methods" class="sidebar-link main-topic">Our services</a>
+                    <li>
+                        <a href="#platform-infrastructure" class="sidebar-link main-topic">Data Sources</a>
                         <ul class="subtopics-container">
-                            <li><a href="#agile" class="sidebar-link subtopic">Refinement layer</a></li>
-                            <li><a href="#scrum" class="sidebar-link subtopic">Self Service</a></li>
-                            <li><a href="#scrum" class="sidebar-link subtopic">Data Mesh</a></li>
-                            <li><a href="#scrum" class="sidebar-link subtopic">ODIN</a></li>
+                            <li><a href="#architecture" class="sidebar-link subtopic">Onboarding in eXtollo</a></li>
+                            <li><a href="#technologies" class="sidebar-link subtopic">Data Sources</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#working-methods" class="sidebar-link main-topic">Working Methods</a>
+                    <li></li>
+                        <a href="#platform-infrastructure" class="sidebar-link main-topic">Platform Infrastructure</a>
                         <ul class="subtopics-container">
-                            <li><a href="#agile" class="sidebar-link subtopic">Self onboarding of the data by CMI</a></li>
-                            <li><a href="#scrum" class="sidebar-link subtopic">Data Onboarding</a></li>
-                            <li><a href="#scrum" class="sidebar-link subtopic">UAM</a></li>
+                            <li><a href="#architecture" class="sidebar-link subtopic">Data Onboarding</a></li>
+                            <li><a href="#technologies" class="sidebar-link subtopic">UAM</a></li>
                             <li><a href="#technologies" class="sidebar-link subtopic">Architecture</a></li>
                             <li><a href="#technologies" class="sidebar-link subtopic">Best Practices</a></li>
                             <li><a href="#technologies" class="sidebar-link subtopic">Data Sharing</a></li>
                             <li><a href="#technologies" class="sidebar-link subtopic">Security</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#working-methods" class="sidebar-link main-topic">Style Guide</a>
-                        <ul class="subtopics-container">
-                            <li><a href="#agile" class="sidebar-link subtopic">TBA</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -426,7 +421,7 @@
         
         <main class="flex-grow">
             <section id="overview" class="content-section mb-16">
-                <h1 class="page-title text-5xl font-light mb-4">Welcome to CoDEHub</h1>
+                <h1 class="text-5xl font-light mb-4">About Smart CoDEHub</h1>
                 <p class="text-xl mb-8 text-gray-600">Revolutionizing data management for Mercedes-Benz</p>
                 <div class="bg-white rounded-lg shadow-md p-8">
                     <p class="mb-4">The Smart Data Layer (SDL) is a cutting-edge data management solution designed specifically for Mercedes-Benz. It provides a unified platform for data integration, analysis, and governance across all departments and operations.</p>
