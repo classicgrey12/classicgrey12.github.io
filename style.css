@@ -20,7 +20,7 @@
 
 /* Base Styles */
 body {
-  font-family: 'MBCorpoATitleCond', sans-serif;
+  font-family: 'MBCorpoATitleCond';
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--mercedes-silver);
@@ -34,7 +34,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'MBCorpoATitleCond', sans-serif;
+  font-family: 'MBCorpoATitleCond';
   font-weight: normal;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -68,18 +68,30 @@ h6 { font-size: 1.25rem; }
   padding: 3rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(19, 19, 19, 0.8)), url('https://group.mercedes-benz.com/bilder/misc/visuals-stern/mercedes-benz-star-pattern-04-gespiegelt-w1680xh945-cutout.png');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7); /* White overlay at 70% opacity */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: var(--mercedes-blue);
+  color: #FFFFFF
 }
 
 .hero p {
   font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto 2rem;
+  color: #FFFFFF;
 }
 
 /* Card Grid */
@@ -91,13 +103,26 @@ h6 { font-size: 1.25rem; }
 }
 
 .card {
-  background-color: var(--white);
+  background-color: #eeeeee;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
 .card:hover {
@@ -106,7 +131,8 @@ h6 { font-size: 1.25rem; }
 }
 
 .card h2 {
-  color: var(--mercedes-blue);
+  color: #000000;
+  font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -118,10 +144,10 @@ h6 { font-size: 1.25rem; }
 }
 
 /* Buttons */
-.btn-mercedes {
+.gs-btn {
   display: inline-block;
-  background-color: var(--mercedes-blue);
-  color: var(--white);
+  background-color:#FFFFFF;
+  color: #000000;
   padding: 0.75rem 1.5rem;
   border-radius: 50px;
   text-decoration: none;
@@ -129,8 +155,8 @@ h6 { font-size: 1.25rem; }
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-mercedes:hover {
-  background-color: var(--mercedes-dark-blue);
+.gs-btn:hover {
+  background-color: #bababa;
   transform: translateY(-2px);
 }
 
