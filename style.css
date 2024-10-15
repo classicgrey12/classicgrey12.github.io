@@ -97,7 +97,7 @@ h6 { font-size: 1.25rem; }
 /* Card Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-bottom: 4rem;
 }
@@ -115,6 +115,17 @@ h6 { font-size: 1.25rem; }
   animation-fill-mode: forwards;
 }
 
+.noa-card {
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 @keyframes fadeInAnimation {
   0% {
       opacity: 0;
@@ -132,7 +143,6 @@ h6 { font-size: 1.25rem; }
 
 .card h2 {
   color: #000000;
-  font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -155,11 +165,28 @@ h6 { font-size: 1.25rem; }
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.lm-btn {
+  display: inline-block;
+  background-color:#ffffff;
+  color: #000000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
 .gs-btn:hover {
   background-color: #bababa;
   transform: translateY(-2px);
 }
 
+.lm-btn:hover {
+  background-color: #d4d4d4;
+  transform: translateY(-2px);
+}
 /* Footer */
 .footer {
   background-color: var(--mercedes-black);
@@ -171,5 +198,39 @@ h6 { font-size: 1.25rem; }
 @media (max-width: 768px) {
   .card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Typewriter Effect */
+.line-1{
+  position: relative;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+    
+}
+
+/* Typewriter Animation */
+.anim-typewriter{
+animation: 
+          typewriter 2s steps(40) 1s 1 normal both,
+          blinkTextCursor 500ms steps(40) infinite normal;
+}
+@keyframes typewriter {
+
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 36.5%;
+  }
+}
+@keyframes blinkTextCursor {
+
+  from  {
+    border-right-color: rgba(255,255,255,.75);
   }
 }

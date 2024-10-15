@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About CoDEHub</title>
+    <title>Data Mesh</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.svg">
+    <link rel="icon" href="../favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../subtopic.css" />
@@ -37,7 +37,7 @@
 <body class="flex flex-col min-h-screen">
     <header class="bg-mercedes-black text-white py-4 px-6 shadow-lg">
         <nav class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
+            <div id="favicon" class="flex items-center">
                 <svg
                     class="w-12 h-12 mr-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -344,10 +344,9 @@
                 <span class="text-2xl">Mercedes-Benz</span>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="./index.html" class="hover:text-mercedes-blue transition">Home</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Services</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Contact</a>
+                <a href="../index.html" class="hover:text-mercedes-blue transition">Home</a>
+                <a href="./subtopic_welcome.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
+                <a href="../contact.html" class="hover:text-mercedes-blue transition">Contact</a>
             </div>
         </nav>
     </header>
@@ -355,25 +354,48 @@
     <div class="flex-grow container mx-auto mt-4 px-1 flex">
         <aside class="w-150 pr-2 hidden lg:block">
             <nav class="sidebar">
+
                 <ul class="sidebar-nav">
-                    <li>
-                        <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
-                            <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
+
+                                <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic active">Data Mesh</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+
+                            <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic active">Data Mesh</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
+
                             <li><a href="#agile" class="sidebar-link subtopic">Concepts (TBA)</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic">Agile Practices</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic">Agile Practices</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
+
                             <li><a href="#domain-overview" class="sidebar-link subtopic">Planning Interval (PI)</a></li>
                             <li><a href="#key-concepts" class="sidebar-link subtopic">Scrum Ceremonies</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Item Definition</a></li>
@@ -383,18 +405,30 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">Sprint Review</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
-                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Managementa</a></li>
+
+                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Management</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Production</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Distribution & Ordering</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Analytics Products</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Data Products</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Refinement layer</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Self Service</a></li>
@@ -402,8 +436,13 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">ODIN</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Self onboarding of the data by CMI</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Data Onboarding</a></li>
@@ -414,11 +453,17 @@
                             <li><a href="#technologies" class="sidebar-link subtopic">Security</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_style-guide.html" class="sidebar-link main-topic">Style Guide</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_style-guide.html" class="sidebar-link main-topic">Style Guide</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">TBA</a></li>
                         </ul>
+
                     </li>
                 </ul>
             </nav>
@@ -426,89 +471,188 @@
         
         <main class="flex-grow">
             <section id="overview" class="content-section mb-16">
-                <h1 class="page-title text-5xl font-light mb-4">Welcome to CoDEHub</h1>
-                <p class="text-xl mb-8 text-gray-600">Revolutionizing data management for Mercedes-Benz</p>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-4">The Smart Data Layer (SDL) is a cutting-edge data management solution designed specifically for Mercedes-Benz. It provides a unified platform for data integration, analysis, and governance across all departments and operations.</p>
-                    <p>By leveraging advanced technologies and best practices in data management, SDL empowers Mercedes-Benz to make data-driven decisions, optimize processes, and deliver exceptional value to our customers.</p>
-                </div>
-            </section>
-
-            <section id="mission" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Prerequisites for your work</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-4">SDL's mission is to provide a unified, secure, and efficient data management solution for Mercedes-Benz, enabling data-driven decision making across all levels of the organization.</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Empower teams with real-time access to critical data</li>
-                        <li>Ensure data integrity and consistency across the organization</li>
-                        <li>Facilitate collaboration and knowledge sharing</li>
-                        <li>Drive innovation through advanced analytics capabilities</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="key-features" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Introducing New Developers</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Centralized Data Repository</h3>
-                        <p>A single source of truth for all Mercedes-Benz data, ensuring consistency and accessibility.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Real-time Data Processing</h3>
-                        <p>Instant data updates and processing for timely insights and decision-making.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Advanced Analytics</h3>
-                        <p>Powerful tools for data analysis, visualization, and predictive modeling.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Robust Security</h3>
-                        <p>State-of-the-art security measures to protect sensitive data and ensure compliance.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="advantages" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Knowledge Transfer (KT)</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-6">By leveraging the Smart Data Layer, Mercedes-Benz gains significant advantages in the competitive automotive industry:</p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Improved decision-making through data-driven insights</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Enhanced operational efficiency across departments</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Better customer insights leading to improved products and services</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Streamlined data governance and compliance management</span>
-                        </li>
-                    </ul>
-                </div>
+                <h1 class="page-title text-5xl font-light mb-4">Data Mesh Concepts</h1>
             </section>
 
             <section id="implementation" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Documents & Video Links</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-6">Implementing SDL across Mercedes-Benz is a strategic process designed to ensure smooth adoption and maximum value:</p>
-                    <ol class="space-y-4 list-decimal list-inside">
-                        <li>Assessment and Planning</li>
-                        <li>Data Migration and Integration</li>
-                        <li>System Configuration and Customization</li>
-                        <li>User Training and Onboarding</li>
-                        <li>Continuous Monitoring and Optimization</li>
-                    </ol>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-medium mb-4">1.1 Core Principles of Data Mesh</h3>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <ul class="space-y-4">
+                            <li>10. Domain-oriented decentralized data ownership and architecture</li>
+                            <li>11.	Data as a product</li>
+                            <li>12.	Self-serve data infrastructure as a platformn</li>
+                            <li>13.	Federated computational governance</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-xl font-medium mb-4 topheading">1.1.1 Domain-oriented Decentralized Data Ownership and Architecture</h3>
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        
+                        <p class="mb-4"><strong>Concept:</strong> Data ownership and management are distributed across different business domains within an organization</p>
+                        <h4 class="text-lg font-medium mb-2">Implementation:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 spacedlist">
+                            <li>Identify key business domains (e.g., sales, marketing, operations)</li>
+                            <li>Assign data ownership to domain experts</li>
+                            <li>Create cross-functional teams responsible for their domain’s data</li>
+                            <li>Develop domain-specific data models and pipelines</li>
+                        </ul>
+                        <h4 class="text-lg font-medium mb-2">Benefits:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 spacedlist">
+                            <li>Improved data quality and relevance</li>
+                            <li>Faster decision-making</li>
+                            <li>Reduced bottlenecks in data management</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="text-xl font-medium mb-4 topheading">1.1.2 Data as a Product</h3>
+
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        
+                        <p class="mb-4"><strong>Concept:</strong> Treat data as a first-class product, not just a byproduct of business operations.</p>
+                        
+                        <h4 class="text-lg font-medium mb-2">Implementation:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 spacedlist">
+                            <li>Define clear data product specifications</li>
+                            <li>Implement data quality controls</li>
+                            <li>Provide comprehensive documentation and metadata</li>
+                            <li>Offer user-friendly interfaces for data consumers</li>
+                            <li>Establish service level objectives (SLOs) for data products</li>
+                        </ul>
+
+                        <h4 class="text-lg font-medium mb-2">Benefits:</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 spacedlist">
+                            <li>Increased data usability and trust</li>
+                            <li>Improved data discoverability</li>
+                            <li>Enhanced data governance</li>
+                        </ul>
+                    </div>
+
+                <h3 id="self-serve-infrastructure" class="text-xl font-medium mb-4 topheading">1.1.3 Self-serve Data Infrastructure as a Platform</h3>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="mb-4"><strong>Concept:</strong> Provide a centralized platform that enables autonomous data operations across domains.</p>
+
+                    <h4 class="text-lg font-medium mb-2">Implementation:</h4>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Develop standardized tools for data access and manipulation</li>
+                        <li>Create automated processes for data pipeline creation and management</li>
+                        <li>Implement self-service analytics capabilities</li>
+                        <li>Ensure easy data discovery across domains</li>
+                    </ul>
+
+                    <h4 class="text-lg font-medium mb-2">Benefits:</h4>
+                    <ul class="list-disc pl-6">
+                        <li>Increased data democratization</li>
+                        <li>Reduced dependency on central IT teams</li>
+                        <li>Faster time-to-insight for data consumers</li>
+                    </ul>
                 </div>
-            </section>
-        </main>
-    </div>
+
+                <h3 id="federated-governance" class="text-xl font-medium mb-4 mt-8 topheading">1.1.4 Federated Computational Governance</h3>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="mb-4"><strong>Concept:</strong> Balance local autonomy with global interoperability through federated governance.</p>
+                  
+                    <h4 class="text-lg font-medium mb-2">Implementation:</h4>
+                    <ul class="list-disc pl-6 mb-4">
+                      <li>Establish global standards for data sharing and interoperability</li>
+                      <li>Allow decentralized implementation of these standards</li>
+                      <li>Implement automated policy enforcement mechanisms</li>
+                      <li>Create collaborative decision-making processes for global policies</li>
+                      <li>Monitor and measure adherence to standards</li>
+                    </ul>
+                  
+                    <h4 class="text-lg font-medium mb-2">Benefits:</h4>
+                    <ul class="list-disc pl-6">
+                      <li>Consistent data practices across the organization</li>
+                      <li>Maintained autonomy for individual domains</li>
+                      <li>Improved data security and compliance</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 id="data-mesh-vs-traditional" class="text-3xl font-light mb-6 mt-16 text-mercedes-blue">1.2 Differences Between Data Mesh and Traditional Data Architectures</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <ul class="list-disc pl-6">
+                      <li><strong>Ownership:</strong> Traditional architectures often have centralized data teams, while data mesh distributes ownership to domain experts.</li>
+                      <li><strong>Data storage:</strong> Traditional models use centralized data lakes or warehouses. Data mesh keeps data distributed but interconnected.</li>
+                      <li><strong>Scalability:</strong> Traditional models can become bottlenecks as data volumes grow. Data mesh aims for better scalability through decentralization.</li>
+                      <li><strong>Agility:</strong> Data mesh allows domains to move quickly, while traditional models may slow down due to centralized control.</li>
+                      <li><strong>Data quality:</strong> In data mesh, domain experts who understand the data are responsible for its quality. Traditional models may struggle with quality due to distance from data sources.</li>
+                      <li><strong>Governance:</strong> Traditional models use centralized governance. Data mesh uses federated governance, balancing local autonomy with global standards.</li>
+                      <li><strong>Skills required:</strong> Traditional models need specialized data engineers. Data mesh requires cross-functional skills within domain teams.</li>
+                      <li><strong>Technology:</strong> Traditional architectures often rely on monolithic systems. Data mesh favors modular, interoperable technologies.</li>
+                    </ul>
+                </div>
+            <h2 id="implementing-domain-ownership" class="text-3xl font-light mb-6 mt-16 text-mercedes-blue">1.3 Implementing Domain-oriented Decentralized Data Ownership</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="mb-4">To implement this principle:</p>
+                <ol class="list-decimal pl-6">
+                    <li><strong>Identify business domains:</strong> Break down your organization into logical business areas (e.g., sales, marketing, finance, operations).</li>
+                    <li><strong>Form domain teams:</strong> Create cross-functional teams for each domain, including subject matter experts, data engineers, and analysts.</li>
+                    <li><strong>Define data products:</strong> Each domain identifies the key data sets they will own and maintain as products.</li>
+                    <li><strong>Establish ownership:</strong> Clearly define responsibilities for data quality, accessibility, and maintenance within each domain.</li>
+                    <li><strong>Develop domain-specific pipelines:</strong> Create data ingestion, processing, and serving pipelines tailored to each domain's needs.</li>
+                    <li><strong>Ensure discoverability:</strong> Implement metadata management and data cataloging to make domain data discoverable across the organization.</li>
+                    <li><strong>Set up monitoring:</strong> Establish metrics and monitoring for data quality and usage within each domain.</li>
+                    <li><strong>Continuous improvement:</strong> Regularly review and refine the domain structure and data products based on organizational changes and user feedback.</li>
+                </ol>
+            </div>
+            <h2 id="data-as-product" class="text-3xl font-light mb-6 mt-16 text-mercedes-blue">1.4 Data as a Product in the Context of Data Mesh</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+            <p class="mb-4">Treating data as a product involves:</p>
+            
+            <ul class="list-disc pl-6">
+                <li><strong>Product thinking:</strong> Apply product management principles to data, considering users, features, and lifecycle.</li>
+                <li><strong>Quality assurance:</strong> Implement rigorous testing and validation processes for data products.</li>
+                <li><strong>Documentation:</strong> Provide comprehensive metadata, data dictionaries, and usage guidelines.</li>
+                <li><strong>Versioning:</strong> Manage data product versions and communicate changes to consumers.</li>
+                <li><strong>SLOs (Service Level Objectives):</strong> Define and commit to performance metrics like availability, freshness, and accuracy.</li>
+                <li><strong>User experience:</strong> Design intuitive interfaces and APIs for data consumers.</li>
+                <li><strong>Feedback loop:</strong> Establish mechanisms for user feedback and continuous improvement.</li>
+                <li><strong>Support:</strong> Offer user support and troubleshooting for data products.</li>
+                <li><strong>Analytics:</strong> Track usage metrics to understand how data products are being used and where improvements can be made.</li>
+            </ul>
+            </div>
+
+            <h2 id="self-serve-infrastructure" class="text-3xl font-light mb-6 mt-16 text-mercedes-blue">1.5 Self-serve Data Infrastructure</h2>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+            <p class="mb-4">Creating a self-serve data infrastructure involves:</p>
+            
+            <ol class="list-decimal pl-6">
+                <li><strong>Centralized platform:</strong> Develop a unified platform for data access, processing, and analysis.</li>
+                <li><strong>Standardization:</strong> Establish common tools, languages, and processes across domains.</li>
+                <li><strong>Automation:</strong> Implement automated data pipeline creation, testing, and deployment.</li>
+                <li><strong>Data discovery:</strong> Create a searchable data catalog with rich metadata.</li>
+                <li><strong>Access control:</strong> Implement fine-grained, role-based access controls.</li>
+                <li><strong>Analytics tools:</strong> Provide a suite of self-service analytics and visualization tools.</li>
+                <li><strong>Education:</strong> Offer training and resources to empower users across the organization.</li>
+                <li><strong>Monitoring and alerting:</strong> Set up systems to track platform health and usage.</li>
+                <li><strong>Scalability:</strong> Ensure the infrastructure can scale to meet growing data volumes and user demands.</li>
+            </ol>
+            </div>
+
+            <h2 id="federated-governance" class="text-3xl font-light mb-6 mt-16 text-mercedes-blue">1.6 Federated Computational Governance</h2>
+
+            <div class="bg-white rounded-lg shadow-md p-6">
+            <p class="mb-4">Implementing federated governance in a data mesh involves:</p>
+            
+            <ul class="list-disc pl-6">
+                <li><strong>Global standards:</strong> Define organization-wide standards for data formats, quality, security, and privacy.</li>
+                <li><strong>Local implementation:</strong> Allow domains to implement these standards in ways that suit their specific needs.</li>
+                <li><strong>Automated enforcement:</strong> Use technology to automatically enforce policies and standards across the mesh.</li>
+                <li><strong>Collaborative policymaking:</strong> Establish a cross-domain governance body to define and evolve global policies.</li>
+                <li><strong>Metadata management:</strong> Implement a centralized metadata repository to enable governance across distributed data.</li>
+                <li><strong>Auditing and compliance:</strong> Set up mechanisms to monitor and report on adherence to governance policies.</li>
+                <li><strong>Data lineage:</strong> Implement tools to track data lineage across the mesh for transparency and troubleshooting.</li>
+                <li><strong>Continuous improvement:</strong> Regularly review and update governance policies based on emerging needs and feedback.</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
 
     <footer class="bg-mercedes-black text-white py-8 mt-16">
         <div class="container mx-auto px-4">
@@ -542,5 +686,5 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 </body>

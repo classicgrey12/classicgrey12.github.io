@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About CoDEHub</title>
+    <title>Agile Practices</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.svg">
+    <link rel="icon" href="../favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../subtopic.css" />
@@ -37,7 +37,7 @@
 <body class="flex flex-col min-h-screen">
     <header class="bg-mercedes-black text-white py-4 px-6 shadow-lg">
         <nav class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
+            <div id="favicon" class="flex items-center">
                 <svg
                     class="w-12 h-12 mr-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -344,10 +344,9 @@
                 <span class="text-2xl">Mercedes-Benz</span>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="./index.html" class="hover:text-mercedes-blue transition">Home</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Services</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Contact</a>
+                <a href="../index.html" class="hover:text-mercedes-blue transition">Home</a>
+                <a href="./subtopic_welcome.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
+                <a href="../contact.html" class="hover:text-mercedes-blue transition">Contact</a>
             </div>
         </nav>
     </header>
@@ -355,25 +354,48 @@
     <div class="flex-grow container mx-auto mt-4 px-1 flex">
         <aside class="w-150 pr-2 hidden lg:block">
             <nav class="sidebar">
+
                 <ul class="sidebar-nav">
-                    <li>
-                        <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
-                            <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
+
+                                <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic">Data Mesh</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+
+                            <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic">Data Mesh</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
+
                             <li><a href="#agile" class="sidebar-link subtopic">Concepts (TBA)</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic active">Agile Practices</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic active">Agile Practices</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
+
                             <li><a href="#domain-overview" class="sidebar-link subtopic">Planning Interval (PI)</a></li>
                             <li><a href="#key-concepts" class="sidebar-link subtopic">Scrum Ceremonies</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Item Definition</a></li>
@@ -383,18 +405,30 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">Sprint Review</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
-                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Managementa</a></li>
+
+                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Management</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Production</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Distribution & Ordering</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Analytics Products</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Data Products</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Refinement layer</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Self Service</a></li>
@@ -402,8 +436,13 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">ODIN</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Self onboarding of the data by CMI</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Data Onboarding</a></li>
@@ -414,11 +453,17 @@
                             <li><a href="#technologies" class="sidebar-link subtopic">Security</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_style-guide.html" class="sidebar-link main-topic">Style Guide</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_style-guide.html" class="sidebar-link main-topic">Style Guide</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">TBA</a></li>
                         </ul>
+
                     </li>
                 </ul>
             </nav>
@@ -426,85 +471,434 @@
         
         <main class="flex-grow">
             <section id="overview" class="content-section mb-16">
-                <h1 class="page-title text-5xl font-light mb-4">Welcome to CoDEHub</h1>
-                <p class="text-xl mb-8 text-gray-600">Revolutionizing data management for Mercedes-Benz</p>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-4">The Smart Data Layer (SDL) is a cutting-edge data management solution designed specifically for Mercedes-Benz. It provides a unified platform for data integration, analysis, and governance across all departments and operations.</p>
-                    <p>By leveraging advanced technologies and best practices in data management, SDL empowers Mercedes-Benz to make data-driven decisions, optimize processes, and deliver exceptional value to our customers.</p>
-                </div>
-            </section>
-
-            <section id="mission" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Prerequisites for your work</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-4">SDL's mission is to provide a unified, secure, and efficient data management solution for Mercedes-Benz, enabling data-driven decision making across all levels of the organization.</p>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Empower teams with real-time access to critical data</li>
-                        <li>Ensure data integrity and consistency across the organization</li>
-                        <li>Facilitate collaboration and knowledge sharing</li>
-                        <li>Drive innovation through advanced analytics capabilities</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="key-features" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Introducing New Developers</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Centralized Data Repository</h3>
-                        <p>A single source of truth for all Mercedes-Benz data, ensuring consistency and accessibility.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Real-time Data Processing</h3>
-                        <p>Instant data updates and processing for timely insights and decision-making.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Advanced Analytics</h3>
-                        <p>Powerful tools for data analysis, visualization, and predictive modeling.</p>
-                    </div>
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <h3 class="text-xl font-medium mb-4">Robust Security</h3>
-                        <p>State-of-the-art security measures to protect sensitive data and ensure compliance.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="advantages" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Knowledge Transfer (KT)</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-6">By leveraging the Smart Data Layer, Mercedes-Benz gains significant advantages in the competitive automotive industry:</p>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Improved decision-making through data-driven insights</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Enhanced operational efficiency across departments</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Better customer insights leading to improved products and services</span>
-                        </li>
-                        <li class="flex items-start">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            <span>Streamlined data governance and compliance management</span>
-                        </li>
-                    </ul>
-                </div>
+                <h1 class="page-title text-5xl font-light mb-4">Agile Practices</h1>
             </section>
 
             <section id="implementation" class="content-section mb-16">
-                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">Documents & Video Links</h2>
-                <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="mb-6">Implementing SDL across Mercedes-Benz is a strategic process designed to ensure smooth adoption and maximum value:</p>
-                    <ol class="space-y-4 list-decimal list-inside">
-                        <li>Assessment and Planning</li>
-                        <li>Data Migration and Integration</li>
-                        <li>System Configuration and Customization</li>
-                        <li>User Training and Onboarding</li>
-                        <li>Continuous Monitoring and Optimization</li>
-                    </ol>
+  
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">1. Planning Interval (PI)</h2>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                <h4 class="text-xl font-medium mb-4">Agenda</h4>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full table-auto">
+                    <thead>
+                        <tr class="bg-gray-200">
+                        <th class="px-4 py-2 text-left">Day</th>
+                        <th class="px-4 py-2 text-left">Agenda</th>
+                        <th class="px-4 py-2 text-left">Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Intro and Welcome</td>
+                        <td class="border px-4 py-2">5 mins</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Business Context</td>
+                        <td class="border px-4 py-2">10 mins</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Platform</td>
+                        <td class="border px-4 py-2">30 mins</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">Data Product and Use Case- Achievement and Goals</td>
+                        <td class="border px-4 py-2">135 mins</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">ART Risks</td>
+                        <td class="border px-4 py-2">60 mins</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">1</td>
+                        <td class="border px-4 py-2">ART SWOT</td>
+                        <td class="border px-4 py-2">60 mins</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">Domain level Plan</td>
+                        <td class="border px-4 py-2">60 mins</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">Resource, tool plan and allocation</td>
+                        <td class="border px-4 py-2">60 mins</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">Finalized planning and Commitment</td>
+                        <td class="border px-4 py-2">135 mins</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">ART Goal</td>
+                        <td class="border px-4 py-2">15 mins</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">2</td>
+                        <td class="border px-4 py-2">Closing and Retrospective</td>
+                        <td class="border px-4 py-2">30 mins</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <h4 class="text-xl font-medium mb-4 mt-8">Domain Team Preparation</h4>
+                <ul class="list-disc pl-6">
+                    <li>Prepare
+                    <ul class="list-circle pl-6">
+                        <li>Backlogs</li>
+                        <li>Draft plan</li>
+                        <li>Objectives (Committed and Uncommitted)</li>
+                        <li>Vision</li>
+                    </ul>
+                    </li>
+                    <li>Grouping Features and Data Products under objectives.</li>
+                    <li>Assign Business Values to the Objectives- To be finalized in PI</li>
+                    <li>Design Features and data products that can be accomplished within a PI and plan accordingly for next 3 months.</li>
+                    <li>Work on Risks and SWOT, keeping ART in mind</li>
+                    <li>Resource and tool requirements</li>
+                </ul>
+                </div>
+            </section>
+            <section id="implementation" class="content-section mb-16">
+
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">2. Scrum Ceremonies</h3>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                <h4 class="text-xl font-medium mb-4">Our Meeting Structure</h4>
+
+                <img class="wiki-image" src="../images/wiki_images/Agile_Practices/Meeting_Structure.png" width="900" height="600">
+                <p class="mb-4"><strong>Note:</strong></p>
+                <ol class="list-decimal pl-6 mb-6">
+                    <li>Teams are requested to avoid regularly scheduled meetings outside Scrum Ceremonies to ensure developers get maximum productive work hours.</li>
+                    <li>Ending a call 5 minutes earlier can help participants get a small break if they have continuous meetings. Hence schedule calls for 25 minutes instead of 30, 55 minutes instead of 60 minutes, and so on.</li>
+                </ol>
+
+                <h4 class="text-xl font-medium mb-4">How do our meetings look like?</h4>
+                <p class="mb-4">Meetings should have:</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>An agenda ==> Clarification regarding goal, structure and participants // The agenda is part of the invitation</li>
+                    <li>A facilitator/moderator/host ==> Keep everybody in line, follow timelines and the goal of the meeting. Scrum Master acts as facilitator, moderator, and host for all Scrum Ceremonies.</li>
+                    <li>A proper documentation
+                    <ul class="list-circle pl-6">
+                        <li>Actions to take ==> e.g. Product Backlog Items & Tasks</li>
+                    </ul>
+                    </li>
+                    <li>For the benefit of all and to save time it helps if the participants comes prepared with precise and concise details.</li>
+                    <li>Please ensure to reply to the meeting invites, "Accept", "Decline" or "Propose new time" as applicable.</li>
+                    <li>In case a meeting is not useful to you either decline or reach out to your Scrum Master for support.</li>
+                </ul>
+
+                <h4 class="text-xl font-medium mb-4">Meeting Structure</h4>
+                <div class="overflow-x-auto">
+                    <table class="w-full table-auto">
+                    <thead>
+                        <tr class="bg-gray-200">
+                        <th class="px-4 py-2 text-left">Event</th>
+                        <th class="px-4 py-2 text-left">Participants</th>
+                        <th class="px-4 py-2 text-left">Content</th>
+                        <th class="px-4 py-2 text-left">Duration</th>
+                        <th class="px-4 py-2 text-left">Point in time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="border px-4 py-2">Backlog Refinement</td>
+                        <td class="border px-4 py-2">PO & Dev-Team</td>
+                        <td class="border px-4 py-2">Presentation and discussion of new content (Features/Stories) by the PO with the target to make them ready to break them down for development in upcoming sprints-estimation of features & stories</td>
+                        <td class="border px-4 py-2">60 minutes</td>
+                        <td class="border px-4 py-2">every week</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Project Refinement</td>
+                        <td class="border px-4 py-2">ProjectResponsibles(PR) & Project BA (@CH)(optional) Domain-PO(s)</td>
+                        <td class="border px-4 py-2">Presentation and discussion of new content (Features/Stories) by the PRs with the target to make them ready to break them down for the Domain refinements and/or the Domain Sprintplannings</td>
+                        <td class="border px-4 py-2">60 minutes</td>
+                        <td class="border px-4 py-2">defined by PBA & PRs</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">Sprint Planning</td>
+                        <td class="border px-4 py-2">PO & Dev-Team</td>
+                        <td class="border px-4 py-2">Definition Sprintbacklog and goal, assignment US to Developers and break them down into Tasks</td>
+                        <td class="border px-4 py-2">60+60 minutes</td>
+                        <td class="border px-4 py-2">all 4 weeks Wednesday (week1)</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Sprint Review</td>
+                        <td class="border px-4 py-2">all project members & stakeholders</td>
+                        <td class="border px-4 py-2">Every team presents Sprint results(in timeblocks published as agenda)- Get Customer Feedback- Define shipment to INT</td>
+                        <td class="border px-4 py-2">120 minutes</td>
+                        <td class="border px-4 py-2">all 4 weeks Tuesday (week4)</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">Sprint Refinement ("Sprint Kick-off")</td>
+                        <td class="border px-4 py-2">all project members</td>
+                        <td class="border px-4 py-2">Every team presents the Sprintgoal and the according Sprintbacklog of the upcoming Sprint(10 minutes per team)</td>
+                        <td class="border px-4 py-2">60 minutes</td>
+                        <td class="border px-4 py-2">all 4 weeks Thursday (week1) from to</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">PO, POP & PBA Alignment Mini PI</td>
+                        <td class="border px-4 py-2">POs, POPs and PBA</td>
+                        <td class="border px-4 py-2">Discussion of integrative topics for the next sprint as well as an overall priorization regarding that topics</td>
+                        <td class="border px-4 py-2">60 minutes</td>
+                        <td class="border px-4 py-2">all 4 weeks before Sprintplannings</td>
+                        </tr>
+                        <tr>
+                        <td class="border px-4 py-2">Retrospective</td>
+                        <td class="border px-4 py-2">All project members and stakeholders depending on PI cycle</td>
+                        <td class="border px-4 py-2">Plan ways to increase quality and effectiveness</td>
+                        <td class="border px-4 py-2">60-90 minutes</td>
+                        <td class="border px-4 py-2">all 4 weeks Thursday (week4) from to</td>
+                        </tr>
+                        <tr class="bg-gray-100">
+                        <td class="border px-4 py-2">Daily</td>
+                        <td class="border px-4 py-2">PO & Dev Team</td>
+                        <td class="border px-4 py-2">Answer daily questions look for impediments to resolve</td>
+                        <td class="border px-4 py-2">15 minutes</td>
+                        <td class="border px-4 py-2">as needed. Set by PO</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+
+            </section>
+            <section id="implementation" class="content-section mb-16">
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">3. Item Definition (Definition of Ready & Done)</h2>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                  <h4 class="text-xl font-medium mb-4">Definition of Ready (DoR) for Features</h4>
+                  
+                  <h5 class="text-lg font-medium mb-2">Target of DoR for Features</h5>
+                  <p class="mb-4">A Feature is ready when it can be picked for Release Planning (every 3 Sprints), where it can be further refinement and broken down in product backlog-items with the Business Consultant and DEV-Team.</p>
+                  
+                  <h5 class="text-lg font-medium mb-2">General Requirements for Features</h5>
+                  <p class="mb-4">To ensure an efficient and high quality development process, feature-items should be clear & feasible.</p>
+                  
+                  <h6 class="text-base font-medium mb-2">Clear Description and Target of Features:</h6>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>The feature must be described in first hand in the form of a user story:
+                      <br><em>As a [type of user], I want [functionality/goal], so that [value/reason]</em></li>
+                    <li>Dependencies to Predecessor / successor / related features are defined</li>
+                    <li>For clarifying upcoming questions name a Contact person / Product Owner</li>
+                    <li>How does the feature benefit the customer, users and other stakeholders?
+                      <br>This needs to be clearly and easily described. It has to be clear if all Scrum Team members have a shared understanding of what it means. POs can readily explain what it means and explain it to the dev team. If there is no knowledge to explain it, then the feature is not ready and might be deleted from the product backlog due to no clear value.</li>
+                    <li>What overall functionalities(s) does the feature comprises?
+                      <br>Describe in detail what functionality should be implemented. The main functionalities must be described clearly without too much details. By doing so in first step the Feature can be broken down into sub-functionalities, without proper technical requirements. The initial breakdown should help the Business Consultant and DEV-Team to understand the feature better and will also support the detailed breakdown in the release planning and refinement meetings</li>
+                  </ul>
+                  
+                  <h6 class="text-base font-medium mb-2">Feasibility of a feature:</h6>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>The feature-Item must be technically feasible to implement. However this will be down with the help of the Business Consultant and DEV-Team in the release planning and refinement meetings. In a first step the Product Owner must only ensure that the main functionalities are broken down and described as feasible as possible.</li>
+                    <li>During the release planning meeting the feature will be further broken down in technical and additional functional requirements by the help of the Business Consultant and DEV-Team.</li>
+                    <li>Acceptance Criteria: How can be measured if the Feature-item is implemented complete and correct</li>
+                    <li>This implies that the feature is also estimable enough for prioritization purposes (so it doesn't have a false position in the backlog)</li>
+                    <li>The feature may be small enough to be completed within one release planning iteration (3 Sprint). However this is not mandatory.</li>
+                    <li>If there is too much uncertainty or technical risk, an enabler-item should be broken out to be directly address the issues. This must be part of the prioritization of the feature.</li>
+                    <li>If the Feature it is not easily understandable for the Business Consultant and DEV-Team with respect to further breakdown and implementation, it is not ready.</li>
+                  </ul>
+                  
+                  <h6 class="text-base font-medium mb-2">Diverse</h6>
+                  <p class="mb-4">Furthermore the INVEST principles (defined by William Wake) can help to be more deep and concrete. They help to write and frame good feature & product backlog items.</p>
+                
+                  <h4 class="text-xl font-medium mb-4 mt-8">Definition of Ready (Product Backlog Items)</h4>
+                  
+                  <h5 class="text-lg font-medium mb-2">Target of DoR for Product Backlog Items:</h5>
+                  <p class="mb-4">A Product Backlog Item is ready when it can be picked in a Sprint Planning and is refined as well as approved by the DEV-Team.</p>
+                  
+                  <h5 class="text-lg font-medium mb-2">General Requirements for Product Backlog Items:</h5>
+                  <p class="mb-4">To ensure an efficient and high quality development process, product backlog-items should be clear & feasible.</p>
+                  
+                  <h5 class="text-lg font-medium mb-2">Clear Description and Target of Product Backlog Items:</h5>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>The product backlog-item must be described in first hand in the form of a user story:
+                      <br><em>As a [type of user], I want [functionality/goal], so that [value/reason].</em></li>
+                    <li>Dependencies to Predecessor / successor / related features/product backlog items must be defined</li>
+                    <li>The mother-feature must be defined</li>
+                    <li>For clarifying upcoming questions name a Contact person / Product Owner</li>
+                    <li>Definition of possible non functional requirements (compute-time, availability, ...)</li>
+                    <li>How does the product backlog-item benefit the customer, users and other stakeholders?
+                      <br>This needs to be clearly and easily described. It has to be clear if all Scrum Team members have a shared understanding of what it means. If there is no knowledge to explain it, then the feature is not ready or is not on the right level of product backlog and might be deleted from the product backlog due to no clear value.</li>
+                    <li>What concrete functionality does the product backlog-item comprises?
+                      <br>Describe in detail what functionality should be implemented with the product backlog-item. The main functionality must be described clearly without too much details. Always have in mind the mother-feature as well as related user stories. The initial breakdown of a product backlog-item should be ensured by the product owner after the release planning meeting.
+                      <br>The first breakdown of a product backlog-item should help the Business Consultant and DEV-Team to understand the product backlog-item better and will also support the detailed breakdown in the refinement meetings – also with respect to additional technical product backlog-items.</li>
+                  </ul>
+                
+                  <h5 class="text-lg font-medium mb-2">Feasibility of a Product Backlog Item:</h5>
+                  <p class="mb-4">Similar to the feasibility of features, with focus on product backlog items.</p>
+                
+                  <h5 class="text-lg font-medium mb-2">Diverse:</h5>
+                  <p class="mb-4">Further more the INVEST principles (defined by William Wake) can help to be more deep and concrete. They help to write and frame good feature & product backlog items.</p>
+                  
+                  <p class="mb-4">The acronym is defined as follows:</p>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li><strong>Independent:</strong> The item stands for itself and is independent of other items. A predecessor or successor is allowed, but the increment can be developed independently within the iteration.</li>
+                    <li><strong>Negotiable:</strong> The content is negotiable and is gradually described in more detail until it can be implemented. This requires to be created with a longer forerun, that it can be refined over several iterations between development team and product owner.</li>
+                    <li><strong>Valuable:</strong> It is valuable and offers the user or customer added value or benefit. Ideally the value should be measurable and the measure should be described.</li>
+                    <li><strong>Estimable:</strong> The developer must be able to estimate the effort. Please find some details here: Estimation</li>
+                    <li><strong>Small:</strong> It is so small, that it can be implemented within one iteration (Sprints).</li>
+                    <li><strong>Testable:</strong> It has acceptance criteria and can be checked and tested (mandatory for product backlog-items.</li>
+                  </ul>
+                
+                  <h4 class="text-xl font-medium mb-4 mt-8">Definition of Done (DoD)</h4>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>Artifact of transparency which helps us with inspection and adaption</li>
+                    <li>A set of criteria or checklist, to check if a Sprint Item is really "done"</li>
+                  </ul>
+                
+                  <h5 class="text-lg font-medium mb-2">Overall:</h5>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>All tasks of the product backlog item are done</li>
+                    <li>All acceptance criteria of product backlog item are fulfilled</li>
+                    <li>(If defined in product backlog item) Unit Tests are implemented/adapted and running green</li>
+                    <li>The status of the sprint item is "ReadyForReview" or "fixed"</li>
+                    <li> <strong>Our defined coding guidelines and conventions are met for each technology </strong></li>
+                    <li>Naming conventions are fulfilled</li>
+                    <li>Code has been merged to master branch
+                      <ul class="list-circle pl-6">
+                        <li>Pull-Request reviewed by another person</li>
+                      </ul>
+                    </li>
+                    <li> <strong>Logging</strong> (if it makes sense for the product backlog item) respective logging is implemented (e.g. LogAnalytics)
+                      <ul class="list-circle pl-6">
+                        <li>Service behavior can be reconstructed by the logs (Information/Error level)</li>
+                        <li>Debug logs are useful for bug analysis</li>
+                      </ul>
+                    </li>
+                    <li> <strong>Documentation</strong> is always important. Please follow our guideline in section
+                        <a class="hyperlink" href="https://dev.azure.com/daimler/DigiFactory/_wiki/wikis/DigiFactory.wiki/45337/Documentation">Documentation</a>
+                    </li>
+                    <li>If applicable, test cases have been created and been executed</li>
+                    <li>No warnings in code</li>
+                    <li>Implementation is tested on DEV environment</li>
+                  </ul>
+                
+                  <h5 class="text-lg font-medium mb-2">Exception for Prototyping:</h5>
+                  <p class="mb-4">For projects, that are in exploration phase, there are typically not all requirements known. In this case, a deviation from the process above is accepted. Goal is an early involvement of the development team into project progress and scope.</p>
+                  <ul class="list-disc pl-6 mb-4">
+                    <li>Acceptance criteria must be fulfilled anyway</li>
+                    <li>Also documentation is mandatory</li>
+                  </ul>
+                  <p>However, typically these product backlog item have to be refactored within a follow up item to comply to overall guidelines and quality standards.</p>
+                </div>
+
+            </section>
+            <section id="implementation" class="content-section mb-16">
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">4. Ticket Workflow</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h4 class="text-xl font-medium mb-4">Ticket Workflow</h4>
+                <img class="wiki-image-ticket" src="../images/wiki_images/Agile_Practices/Ticket_Workflow.png" width="1000" height="1000">
+                
+                <p class="mb-4">Source file: 
+                    <a href="https://dev.azure.com/daimler/3b2fa078-e485-4516-9720-bda4d7b2ef30/_apis/git/repositories/02a9db65-c8ab-4052-9ea1-19256432691c/Items?path=/.attachments/Workflow%20-%20DigiFactory-7276f212-ed6b-4954-a7a3-43ffb38abeb1.vsdx&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&includeContentMetadata=true&versionDescriptor.version=wikiMaster" class="hyperlink">Workflow - DigiFactory.vsdx</a>
+                </p>
+
+                <h5 class="text-lg font-medium mb-2">Product Backlog Item Workflow in Azure DevOps Board</h5>
+
+
+                <h5 class="text-lg font-medium mb-2">State definition</h5>
+                <ul class="list-disc pl-6 mb-4">
+                    <li><strong>New:</strong> Item is new and not ready to be estimated</li>
+                    <li><strong>Removed:</strong> Item is removed and was/will not be done</li>
+                    <li><strong>Ready:</strong> Item is described completely and can be estimated</li>
+                    <li><strong>on Hold:</strong> There are open questions which have to be answered</li>
+                    <li><strong>Approved:</strong> Dev Team estimated and approved the item</li>
+                    <li><strong>Committed:</strong> Item will be done in chosen sprint</li>
+                    <li><strong>In Development:</strong> Item is in development</li>
+                    <li><strong>Ready for Review:</strong> Item has been implemented and reviewed and needs to be tested by product owner</li>
+                    <li><strong>Done:</strong> Item is successfully implemented, reviewed, tested and therefore done</li>
+                </ul>
+                </div>
+            </section>
+            <section id="implementation" class="content-section mb-16">
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">5. Boards & Estimation</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                <h4 class="text-xl font-medium mb-4">Introduction</h4>
+                <p class="mb-4">We estimate product backlog item with Story Points. Story points are an abstract estimation value to define the relative complexity/effort of a product backlog item.</p>
+
+                <h5 class="text-lg font-medium mb-2">Basic guidelines:</h5>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>A Storypoint is equivalent to half a developer-day (~3h).</li>
+                    <li>We only use the following fibonacci numbers to estimate: 1, 2, 3, 5, 8, 13, 21</li>
+                    <li>A typical mid-size product backlog item should be estimated with 5 story points</li>
+                    <li>Product backlog items which are estimated with 21 story points should be split into several smaller items as this indicates a high complexity or efforts which can't be handled in one sprint</li>
+                </ul>
+
+                <h5 class="text-lg font-medium mb-2">Which factors are incorporated into the estimation?</h5>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>The amount of functionality and necessary work</li>
+                    <li>The complexity</li>
+                    <li>Possible risks</li>
+                </ul>
+
+                <h5 class="text-lg font-medium mb-2">Workflow of estimation:</h5>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Each product backlog item effort is estimated before sprint planning</li>
+                    <li>During refinement, each team member estimates the effort of the product backlog item</li>
+                    <li>Estimation is done hidden until all members have finished the estimation</li>
+                    <li>Tools can assist the process, e.g. Estimation tool in Azure DevOps: <a href="https://dev.azure.com/daimler/DigiFactory/_apps/hub/ms-devlabs.estimate.estimate-hub#/" class="hyperlink">Estimate</a></li>
+                    <li>If all results are relatively similar, the value is transferred to the product backlog item</li>
+                    <li>If values deviate a lot, the team members of the least and the highest value explain their thoughts to the team</li>
+                    <li>Subsequently estimation is repeated. The process is repeated until the team agrees on a value.</li>
+                </ul>
+
+                <h5 class="text-lg font-medium mb-2">Application:</h5>
+                <p class="mb-4">After practicing the product backlog item point estimation for some sprints, the dev team will stabilize to a certain amount of story points per sprint. This is a weak indicator of the amount of possible work a team can realize within one sprint. The amount of story points is also named a team's velocity.</p>
+
+                <p class="mb-4 font-bold">However, this is only a tool to help the development team to realistically plan a sprint!</p>
+
+                <p class="mb-4">A team's velocity is an absolute fictive and team specific number. It must never be used to calculate costs or compare teams. Each team will evolve its own relative estimation numbers and the values also might change over time.</p>
+                </div>
+            </section>
+            <section id="implementation" class="content-section mb-16">
+                <h2 class="text-3xl font-light mb-6 text-mercedes-blue">6. Domain Creation</h2>
+                <div class="bg-white rounded-lg shadow-md p-6">
+                <p class="mb-4">"CoDE Hub" project space in Azure DevOps contains multiple domains. For each of the domain we create a new "Team" in Azure DevOps and a respective board is created automatically.</p>
+
+                <p class="mb-4">Each domain have their own Scrum Team. The roles within the Scrum Team are:</p>
+                <ol class="list-decimal pl-6 mb-4">
+                    <li>One Domain owner</li>
+                    <li>Multiple Product Owners</li>
+                    <li>Developers</li>
+                </ol>
+                <img class="wiki-image" src="../images/wiki_images/Agile_Practices/Domain_Creation.png" width="500" height="400">
+                <h4 class="text-xl font-medium mb-4">Domain:</h4>
+                <ol class="list-decimal pl-6 mb-4">
+                    <li>Distribution and Ordering</li>
+                    <li>Platform</li>
+                    <li>Production</li>
+                    <li>Volume</li>
+                    <li>Buildability</li>
+                </ol>
+
+                <h4 class="text-xl font-medium mb-4 mt-8">Initiative:</h4>
+                <p class="mb-4">It is the highest level of Work Item Type. An "Initiative" can be a "Program". Often an initiative involves Epics from different domains.</p>
+
+                <h4 class="text-xl font-medium mb-4 mt-8">Epic:</h4>
+                <p class="mb-4">An Epic is a large chunk of work under a specific domain that can be divided into Features and PBIs. An Epic can spread across multiple sprints/iterations and across multiple Scrum Teams. An Epic contains multiple Features, PBIs and Bugs. Epic should be written in a simple language that everyone can understand.
+                </p>
+                <img class="wiki-image-ticket" src="../images/wiki_images/Agile_Practices/Epic.png" width="500" height="400">
+
+                <h4 class="text-xl font-medium mb-4 mt-8">Feature:</h4>
+                <p class="mb-4">An Epic can be divided into smaller chunk of work items called Features. Features are planned to be achieved within a Quarter, and can expand over multiple iterations/sprints. We have based the roadmaps in Azure DevOps around Features, these features can be achieved in the current quarter or the future quarters. Reports to the leadership are planned to be presented at Feature level and PI planning too will be done around the Features. A Feature contains multiple PBIs. Feature should be written in a simple language that everyone can understand.</p>
+                <img class="wiki-image" src="../images/wiki_images/Agile_Practices/Epic_Feature.png" width="200" height="200">
+                <h4 class="text-xl font-medium mb-4 mt-8">PBIs/ User Stories:</h4>
+                <p class="mb-4">PBIs or User Stories are the smallest chunk of work item type. A PBI can be 3-5 days long and is started and completed within a sprint/iteration. Estimations of "Story Points" are done at PBI levels. All the PBIs are created in Product Backlog land then moved to sprint backlog during the Sprint planning. The Scrum team can also assign Future iterations to the PBIs based on the priorities of the work, during the Sprint Refinement. But this will only act as a placeholder the actual PBIs for the sprint backlog will only be finalized during the Sprint Planning. A PBI needn't be too technical and written in a language that everyone can understand, it must contain "Acceptance Criteria".</p>
+                <img class="wiki-image" src="../images/wiki_images/Agile_Practices/Characteristics.png" width="200" height="200">
+                <h5 class="text-lg font-medium mb-2">Acceptance Criteria:</h5>
+                <p class="mb-4">In Agile, acceptance criteria refer to a set of predefined requirements that must be met to mark a user story complete. Acceptance criteria determine the scope and requirements that must be executed by developers to consider the user story finished.</p>
+                <p class="mb-4">Acceptance Criteria can be functional or non-functional, but we should try avoiding adding too many Acceptance Criteria to a PBI/User Story.</p>
+
+                <h4 class="text-xl font-medium mb-4 mt-8">Task/Sub Task:</h4>
+                <p class="mb-4">These are the sub work that can be created within a PBI by the developers. A Task estimation is based on few hours in a day. A task can be written in technical language by and for the developers.</p>
                 </div>
             </section>
         </main>
@@ -542,5 +936,5 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 </body>

@@ -1,11 +1,27 @@
 /* Sidebar Styles */
-.sidebar-nav {
 
+.topheading {
+    margin-top: 30px;
+}
+
+.spacedlist {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar-nav {
     list-style-type: none;
     padding-top: 20px;
-    margin-left: -10px;
-    padding-right: 30px;
-
+    padding-right: 40px;
 }
 
 .sidebar-link {
@@ -16,15 +32,20 @@
     transition: all 0.2s ease;
 }
 
+.sidebar-item {
+    position: relative;
+    padding-right: 30px;
+}
 /* Main topic styles */
 .sidebar-link.main-topic {
-    font-size: 20px;
+    font-size: 16.5px;
     font-weight: bold;
+    width: 200px;
 }
 
 /* Subtopic styles */
 .sidebar-link.subtopic {
-    font-size: 15px;
+    font-size: 14px;
     padding-left: 2rem;
 }
 
@@ -52,3 +73,79 @@
 .page-title {
     margin-top: 25px;
 }
+
+/* Dropdown toggle button */
+.dropdown-toggle {
+    position: absolute;
+    margin-top: 1px;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    font-size: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.rotated {
+    transform: rotate(180deg);
+}
+
+/* Subtopics container */
+.subtopics-container {
+    display: none;
+    padding-left: 1rem;
+}
+
+/* Show subtopics when active */
+.sidebar-item.active > .subtopics-container {
+    display: block;
+}
+
+/* Ensure subtopics are not hidden by other styles */
+.sidebar-link.subtopic {
+    display: block;
+}
+
+.wiki-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.wiki-image-ticket {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+a:link {
+    color: rgb(28, 172, 216);
+}
+
+.hyperlink {
+    color: rgb(28, 172, 216);
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    background-color: #dddddd;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+ul.a {
+    list-style-type: circle;
+  }

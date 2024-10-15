@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About CoDEHub</title>
+    <title>Style Guide</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./favicon.svg">
+    <link rel="icon" href="../favicon.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../subtopic.css" />
@@ -37,7 +37,7 @@
 <body class="flex flex-col min-h-screen">
     <header class="bg-mercedes-black text-white py-4 px-6 shadow-lg">
         <nav class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
+            <div id="favicon" class="flex items-center">
                 <svg
                     class="w-12 h-12 mr-4"
                     xmlns="http://www.w3.org/2000/svg"
@@ -344,10 +344,9 @@
                 <span class="text-2xl">Mercedes-Benz</span>
             </div>
             <div class="hidden md:flex space-x-6">
-                <a href="./index.html" class="hover:text-mercedes-blue transition">Home</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Services</a>
-                <a href="./subtopic.html" class="hover:text-mercedes-blue transition">Contact</a>
+                <a href="../index.html" class="hover:text-mercedes-blue transition">Home</a>
+                <a href="./subtopic_welcome.html" class="hover:text-mercedes-blue transition">About CoDEHub</a>
+                <a href="../contact.html" class="hover:text-mercedes-blue transition">Contact</a>
             </div>
         </nav>
     </header>
@@ -355,25 +354,48 @@
     <div class="flex-grow container mx-auto mt-4 px-1 flex">
         <aside class="w-150 pr-2 hidden lg:block">
             <nav class="sidebar">
+
                 <ul class="sidebar-nav">
-                    <li>
-                        <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_welcome.html" class="sidebar-link main-topic">Welcome to CoDEHub</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
-                            <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
-                            <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
+
+                                <li><a href="#welcome-intro" class="sidebar-link subtopic">Prerequisites for your work</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Introducing New Developers</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Knowledge Transfer (KT)</a></li>
+                                <li><a href="#welcome-features" class="sidebar-link subtopic">Documents & Video Links</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic">Data Mesh</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+
+                            <a href="./subtopic_data-mesh.html" class="sidebar-link main-topic">Data Mesh</a>
+                            <button class="dropdown-toggle">▼</button>
+
+                        </div>
                         <ul class="subtopics-container">
+
                             <li><a href="#agile" class="sidebar-link subtopic">Concepts (TBA)</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic">Agile Practices</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_agile-practices.html" class="sidebar-link main-topic">Agile Practices</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
+
                             <li><a href="#domain-overview" class="sidebar-link subtopic">Planning Interval (PI)</a></li>
                             <li><a href="#key-concepts" class="sidebar-link subtopic">Scrum Ceremonies</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Item Definition</a></li>
@@ -383,18 +405,30 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">Sprint Review</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+
+                    <li class="sidebar-item">
+
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_domain-specific.html" class="sidebar-link main-topic">Domain-Specific Information</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
-                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Managementa</a></li>
+
+                            <li><a href="#internal-data" class="sidebar-link subtopic">Product Management</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Production</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Distribution & Ordering</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Analytics Products</a></li>
                             <li><a href="#external-data" class="sidebar-link subtopic">Data Products</a></li>
                         </ul>
                     </li>
-                    <li></li>
-                        <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_our-services.html" class="sidebar-link main-topic">Our services</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Refinement layer</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Self Service</a></li>
@@ -402,8 +436,13 @@
                             <li><a href="#scrum" class="sidebar-link subtopic">ODIN</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_working-methods.html" class="sidebar-link main-topic">Working Methods</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">Self onboarding of the data by CMI</a></li>
                             <li><a href="#scrum" class="sidebar-link subtopic">Data Onboarding</a></li>
@@ -414,11 +453,17 @@
                             <li><a href="#technologies" class="sidebar-link subtopic">Security</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="./subtopic_style-guide.html" class="sidebar-link main-topic active">Style Guide</a>
+
+                    <li class="sidebar-item">
+                        <div class="sidebar-item-header">
+                            <a href="./subtopic_style-guide.html" class="sidebar-link main-topic active">Style Guide</a>
+                            <button class="dropdown-toggle">▼</button>
+                        </div>
+
                         <ul class="subtopics-container">
                             <li><a href="#agile" class="sidebar-link subtopic">TBA</a></li>
                         </ul>
+
                     </li>
                 </ul>
             </nav>
@@ -542,5 +587,5 @@
             </div>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
 </body>

@@ -31,6 +31,17 @@
 			.btn-mercedes:hover {
 				background-color: #0082b9;
 			}
+
+			@keyframes typewriter {
+
+				from {
+				width: 0;
+				}
+
+				to {
+				width: 30%;
+				}
+			}
 		</style>
 	</head>
 	<body class="bg-mercedes-silver">
@@ -352,64 +363,75 @@
 
 		<main class="container mx-auto mt-8 px-4">
 			<section class="hero hero-bg">
-					<h1 class="line-1 anim-typewriter">Welcome to CoDEHub</h1>
-					<p>Accelerating Mercedes-Benz's Future with Advanced Data Intelligence</p>
-					<a href="./wiki_pages/subtopic_welcome.html" class="gs-btn">Get Started</a>
-			
+					<h1 class="line-1 anim-typewriter">Contact CoDEHub</h1>
+					<p>Drive Innovation Together. Your insights fuel our digital excellence and shape the future of Mercedes-Benz</p>
 			</section>
 
-			<section class="card-grid">
-				<a class="card" href="./wiki_pages/subtopic_data-mesh.html">
-				  <div class="card-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="M120-80v-280h120v-160h200v-80H320v-280h320v280H520v80h200v160h120v280H520v-280h120v-80H320v80h120v280H120Zm280-600h160v-120H400v120ZM200-160h160v-120H200v120Zm400 0h160v-120H600v120ZM480-680ZM360-280Zm240 0Z"/></svg>
-				  </div>
-				  <h2>Data Mesh</h2>
-				  <p>Concepts (TBA)</p>
-				</a>
-				<a class="card" href="./wiki_pages/subtopic_agile-practices.html">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="m216-160-56-56 384-384H440v80h-80v-160h233q16 0 31 6t26 17l120 119q27 27 66 42t84 16v80q-62 0-112.5-19T718-476l-40-42-88 88 90 90-262 151-40-69 172-99-68-68-266 265Zm-96-280v-80h200v80H120ZM40-560v-80h200v80H40Zm739-80q-33 0-57-23.5T698-720q0-33 24-56.5t57-23.5q33 0 57 23.5t24 56.5q0 33-24 56.5T779-640Zm-659-40v-80h200v80H120Z"/></svg>
-					</div>
-					<h2>Agile Practices</h2>
-					<p>Ensure data security and compliance with our state-of-the-art SDL platform.</p>
-				  </div>
-				  <a class="card" href="./wiki_pages/subtopic_domain-specific.html">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm278-58L296-440l58-58 84 84 168-168 58 58-226 226Zm-278 58v-480 480Z"/></svg>
-					</div>
-					<h2>Domain-Specific Information</h2>
-					<p>Product Management, Production, Distribution & Ordering, Analytics Products, Data Products</p>
-				  </div>
-				  <a class="card" href="./wiki_pages/subtopic_our-services.html">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="M760-600q-57 0-99-34t-56-86H354q-11 42-41.5 72.5T240-606v251q52 14 86 56t34 99q0 66-47 113T200-40q-66 0-113-47T40-200q0-57 34-99t86-56v-251q-52-14-86-56t-34-98q0-66 47-113t113-47q56 0 98 34t56 86h251q14-52 56-86t99-34q66 0 113 47t47 113q0 66-47 113t-113 47ZM200-120q33 0 56.5-24t23.5-56q0-33-23.5-56.5T200-280q-32 0-56 23.5T120-200q0 32 24 56t56 24Zm0-560q33 0 56.5-23.5T280-760q0-33-23.5-56.5T200-840q-32 0-56 23.5T120-760q0 33 24 56.5t56 23.5ZM760-40q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113T760-40Zm0-80q33 0 56.5-24t23.5-56q0-33-23.5-56.5T760-280q-33 0-56.5 23.5T680-200q0 32 23.5 56t56.5 24Zm0-560q33 0 56.5-23.5T840-760q0-33-23.5-56.5T760-840q-33 0-56.5 23.5T680-760q0 33 23.5 56.5T760-680ZM200-200Zm0-560Zm560 560Zm0-560Z"/></svg>
-					</div>
-					<h2>Our Services</h2>
-					<p>Onboarding in eXtollo and Data Sources</p>
-				  </div>
-				<a class="card" href="./wiki_pages/subtopic_working-methods.html">
-				  <div class="card-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="M756-120 537-339l84-84 219 219-84 84Zm-552 0-84-84 276-276-68-68-28 28-51-51v82l-28 28-121-121 28-28h82l-50-50 142-142q20-20 43-29t47-9q24 0 47 9t43 29l-92 92 50 50-28 28 68 68 90-90q-4-11-6.5-23t-2.5-24q0-59 40.5-99.5T701-841q15 0 28.5 3t27.5 9l-99 99 72 72 99-99q7 14 9.5 27.5T841-701q0 59-40.5 99.5T701-561q-12 0-24-2t-23-7L204-120Z"/></svg>
-				  </div>
-				  <h2>Working Methods</h2>
-				  <p>Leverage cutting-edge analytics to derive actionable insights from your data.</p>
-				</div>
-				<a class="card" href="./wiki_pages/subtopic_style-guide.html">
-					<div class="card-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#434343"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-640v560h560v-560h-80v280l-100-60-100 60v-280H200Zm0 560v-560 560Z"/></svg>
-					</div>
-					<h2>Style Guide</h2>
-					<p>Data Onboarding, UAM, Architecture, Best Practices, Data Sharing, Security</p>
-				</a>
-			  </section>
+            <section class="noa-card rounded-lg shadow-md p-8 mb-16">
+				<h2 class="text-3xl font-bold mb-6">Our Team</h2>
 
-			<section class="noa-card rounded-lg shadow-md p-8 mb-16">
-				<h2 class="text-3xl font-bold mb-6">Getting Started with CoDEHub</h2>
-				<p class="mb-6">
-					Join the Mercedes-Benz data revolution. Our CoDEHub provides
-					the Prerequisites for your work and Knowledge Transfer (KT) you need for your project.
-				</p>
-				<a href="./wiki_pages/subtopic_welcome.html" class="lm-btn">Learn More</a>
+                <section class="card-grid">
+
+                    <a class="card" >
+                      <div class="card-icon">
+                        <img src="./images/flo.png" width="100" height="200">
+                      </div>
+                      <h2>Florian Spieth</h2>
+                      <p>Domain Ordering + Distribution</p>
+                      <p>
+                            E-Mail: florian.spieth@mercedes-benz.com
+                      </p>
+
+                    </a>
+
+                    <a class="card" >
+                        <div class="card-icon">
+                          <img src="./images/sven.jpg" width="100" height="200">
+                        </div>
+                        <h2>Sven Schrödel</h2>
+                        <p>Domain Owner Offering</p>
+                        <p>
+                            E-Mail: sven.schroedel@mercedes-benz.com
+                        </p>
+    
+                    </a>
+
+                    <a class="card" >
+                        <div class="card-icon">
+                          <img src="./images/stergios.jpg" width="100" height="200">
+                        </div>
+                        <h2>Stergios Xouridas</h2>
+                        <p>Domain Production</p>
+                        <p>
+                            E-Mail: stergios.xouridas@mercedes-benz.com
+                        </p>
+    
+                    </a>
+
+                    <a class="card" >
+                        <div class="card-icon">
+                          <img src="./images/dragos.png" width="100" height="200">
+                        </div>
+                        <h2>Dragos Pisilea</h2>
+                        <p>Product Owner ODIN </p>
+                        <p>
+                            E-Mail: dragos.pisilea@mercedes-benz.com
+                        </p>
+    
+                    </a>
+
+                    <a class="card" >
+                        <div class="card-icon">
+                          <img src="./images/merten.png" width="100" height="200">
+                        </div>
+                        <h2>Merten Frenzel</h2>
+                        <p>IT Platform Owner</p>
+                        <p>
+                            E-Mail: merten.frenzel@mercedes-benz.com
+                        </p>
+    
+                    </a>
+                </section>
 			</section>
 
 			<section class="grid md:grid-cols-2 gap-8 mb-16">
